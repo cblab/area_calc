@@ -26,7 +26,7 @@ class DataProvider
         $content = [];
 
         try {
-            $response = $httpClient->request('GET', 'https://jobs.qwicc.com/api/board/');
+            $response = $httpClient->request('GET', 'someurl');
 
             if (200 !== $response->getStatusCode()) {
                 $this->logger->error('Error: HTTP response code is ' . $response->getStatusCode());
